@@ -1,0 +1,190 @@
+*{
+box-sizing: border-box;
+}
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+html{
+font-size: 10px;
+}
+body{
+font-family: 'Montserrat', sans-serif;
+font-weight: normal;
+font-size: 1.7rem;
+padding: 0;
+margin: 0;
+background-color: rgb(143,165,215);
+}
+.container{
+max-width: 600px;
+margin: 0 auto;
+}
+.wrraper{
+background-color: rgba(77, 114, 202, .9);
+position: relative;
+
+}
+.wrraper::before{
+content: "";
+position: absolute;
+background: url("../img/fon.jpg")no-repeat 40% 50%;
+filter: blur(3px);
+left:0;
+top: 0;
+bottom:0;
+right: 0;
+z-index:-1;
+}
+.header_link{
+display: flex;
+flex-direction: row;
+padding: 20px 15px;
+}
+.header_link button{
+background: transparent;
+border: 0;
+font-size: 1.8rem;
+color: #fff;
+cursor: pointer;
+outline: none;
+font-family: 'Roboto Condensed', sans-serif;
+font-weight: 700;
+}
+.link--right{
+margin-left: auto;
+margin-right: 0;
+}
+.header__avatar{
+display: flex;
+flex-direction: column;
+align-items: center;
+color: #fff;
+text-align: center;
+}
+.header__avatar img{
+width:200px;
+height: 200px;
+border-radius: 50%;
+border: 2px solid #fff;
+}
+h1{
+line-height: 1;
+margin-bottom: 5px;
+font-family: 'Roboto Condensed', sans-serif;
+font-weight: 700;
+}
+.avatar__description{
+margin-top: 0;
+max-width: 400px;
+padding: 10px 30px;
+font-family: 'Roboto Condensed', sans-serif;
+font-weight: normal;
+}
+
+
+input[name="tab"],
+input[name="add--friends"]{
+display: none;
+}
+input[name="tab"]:checked+label{
+border-bottom: 6px solid #00bfff;
+color: #fff;
+}
+
+
+
+
+.navigation{
+font-size: 0;
+}
+
+
+.navigation__label{
+display: inline-block;
+border-bottom: 6px solid #3051a0;
+text-align: center;
+font-size: 2rem;
+width: 25%;
+cursor: pointer;
+background-color: #3051a0;
+padding: 15px 10px;
+color: rgba(255,255,255,.6);
+}
+
+.content{
+font-size: 2rem;
+
+
+}
+section {
+display: none;
+background-color: #fff;
+border-radius: 0 0 10px 10px;
+overflow-y: scroll;
+
+}
+
+input[id="tab-1"]:checked~.content .tab-1,
+input[id="tab-2"]:checked~.content .tab-2,
+input[id="tab-3"]:checked~.content .tab-3,
+input[id="tab-4"]:checked~.content .tab-4{
+display: block;
+}
+.content--likes{
+padding: 60px 20px 50px;
+text-align: center;
+
+}
+.content--likes{
+font-size: 3.5rem;
+color:#e35451 ;
+}
+
+.content--likes p {
+margin-top: 5px;
+color: #6d6d6d;
+font-size: 2rem;
+}
+.content--guides{
+padding: 20px 15px;
+
+}
+.content-followers img{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+.content-followers{
+list-style: none;
+margin: 0;
+padding: 10px;
+}
+.content-followers label{
+cursor: pointer;
+}
+input[name="add--friends"]:checked+label{
+color: #7c7d8e;
+
+}
+
+ul li {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+max-height: 80px;
+padding:10px 0 10px;
+border-bottom: 1px solid #686868;
+border-color: rgba(0, 0, 0, .3);
+}
+.user--name{
+font-size: 2.6rem;
+margin: 0;
+line-height: 1;
+padding: 0 25px ;
+margin-right: auto;
+margin-left: 0;
+}
+.user--name span{
+font-size: 1.6rem;
+color:#686868;
+}
