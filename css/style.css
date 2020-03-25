@@ -118,6 +118,7 @@ font-size: 2rem;
 section {
 display: none;
 background-color: #fff;
+max-height: 300px;
 border-radius: 0 0 10px 10px;
 overflow-y: scroll;
 
